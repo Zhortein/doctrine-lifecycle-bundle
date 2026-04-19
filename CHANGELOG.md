@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1] - 2026-04-19
+
+### Fixed
+- Added support for DoctrineBundle 3.x in Composer constraints
+
 ## [0.1.0] - 2026-04-19
 
 ### Added
