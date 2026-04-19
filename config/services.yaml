@@ -8,3 +8,6 @@ services:
     exclude:
       - '../src/DependencyInjection/'
       - '../src/ZhorteinDoctrineLifecycleBundle.php'
+
+  Zhortein\DoctrineLifecycleBundle\Resolver\ActorResolverInterface:
+    alias: Zhortein\DoctrineLifecycleBundle\Resolver\NullActorResolver
