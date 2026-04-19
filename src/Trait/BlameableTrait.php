@@ -20,7 +20,7 @@ trait BlameableTrait
         return $this->createdByIdentifier;
     }
 
-    public function setCreatedByIdentifier(?string $createdByIdentifier): static
+    public function setCreatedByIdentifier(?string $createdByIdentifier): self
     {
         $this->createdByIdentifier = $createdByIdentifier;
 
@@ -32,7 +32,7 @@ trait BlameableTrait
         return $this->updatedByIdentifier;
     }
 
-    public function setUpdatedByIdentifier(?string $updatedByIdentifier): static
+    public function setUpdatedByIdentifier(?string $updatedByIdentifier): self
     {
         $this->updatedByIdentifier = $updatedByIdentifier;
 
