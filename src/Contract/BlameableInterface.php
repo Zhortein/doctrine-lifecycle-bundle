@@ -8,9 +8,9 @@ interface BlameableInterface
 {
     public function getCreatedByIdentifier(): ?string;
 
-    public function setCreatedByIdentifier(?string $createdByIdentifier): static;
+    public function setCreatedByIdentifier(?string $createdByIdentifier): self;
 
     public function getUpdatedByIdentifier(): ?string;
 
-    public function setUpdatedByIdentifier(?string $updatedByIdentifier): static;
+    public function setUpdatedByIdentifier(?string $updatedByIdentifier): self;
 }
