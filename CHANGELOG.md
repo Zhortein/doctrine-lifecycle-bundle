@@ -2,10 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.2] - 2026-04-19
+## [0.1.3] - 2026-04-19
 
 ### Fixed
 - Change return types for setters in BlameableInterface / BlameableTrait and TimestampableInterface / TimestampableTrait
+
+## [0.1.2] - 2026-04-19
 
 ### Fixed
 - Align Blameable interface prototypes and BlameableTrait methods
