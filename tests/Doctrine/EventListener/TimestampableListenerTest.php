@@ -21,7 +21,7 @@ final class TimestampableListenerTest extends TestCase
         $listener = new TimestampableListener();
         $entity = new TimestampableTestEntity();
 
-        $entityManager = $this->createMock(EntityManagerInterface::class);
+        $entityManager = $this->createStub(EntityManagerInterface::class);
         $args = new PrePersistEventArgs($entity, $entityManager);
 
         $listener->prePersist($args);
@@ -40,7 +40,7 @@ final class TimestampableListenerTest extends TestCase
         $existingCreatedAt = new \DateTimeImmutable('2026-01-01 10:00:00', new \DateTimeZone('UTC'));
         $entity->setCreatedAt($existingCreatedAt);
 
-        $entityManager = $this->createMock(EntityManagerInterface::class);
+        $entityManager = $this->createStub(EntityManagerInterface::class);
         $args = new PrePersistEventArgs($entity, $entityManager);
 
         $listener->prePersist($args);
@@ -55,7 +55,7 @@ final class TimestampableListenerTest extends TestCase
         $entity = new TimestampableTestEntity();
 
         $unitOfWork = $this->createMock(UnitOfWork::class);
-        $metadata = $this->createMock(ClassMetadata::class);
+        $metadata = $this->createStub(ClassMetadata::class);
         $entityManager = $this->createMock(EntityManagerInterface::class);
 
         $entityManager

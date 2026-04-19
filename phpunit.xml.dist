@@ -5,7 +5,8 @@
          bootstrap="vendor/autoload.php"
          colors="true"
          cacheDirectory=".phpunit.cache"
-         beStrictAboutTestsThatDoNotTestAnything="false">
+         beStrictAboutTestsThatDoNotTestAnything="false"
+         displayDetailsOnPhpunitNotices="true">
     <testsuites>
         <testsuite name="Zhortein Doctrine Lifecycle Bundle Test Suite">
             <directory>tests</directory>
