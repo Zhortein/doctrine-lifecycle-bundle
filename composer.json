@@ -1,10 +1,14 @@
 {
   "name": "zhortein/doctrine-lifecycle-bundle",
-  "description": "Reusable Doctrine lifecycle features for Symfony entities, including timestampable, blameable and soft-delete support.",
-  "keywords": ["symfony", "bundle", "lifecycle", "timestampable", "blameable", "soft-delete"],
+  "description": "Reusable Doctrine lifecycle features for Symfony entities, including timestampable and blameable support.",
+  "keywords": ["symfony", "bundle", "doctrine", "lifecycle", "timestampable", "blameable"],
   "type": "symfony-bundle",
   "license": "MIT",
-  "homepage": "https://www.david-renard.fr",
+  "homepage": "https://github.com/Zhortein/doctrine-lifecycle-bundle",
+  "support": {
+    "issues": "https://github.com/Zhortein/doctrine-lifecycle-bundle/issues",
+    "source": "https://github.com/Zhortein/doctrine-lifecycle-bundle"
+  },
   "authors": [
     {
       "name": "David Renard",
@@ -24,8 +28,9 @@
     }
   },
   "require": {
-    "php": ">=8.4",
+    "php": "^8.4",
     "doctrine/doctrine-bundle": "^2.12",
+    "doctrine/orm": "^3.3",
     "doctrine/persistence": "^3.3 || ^4.0",
     "symfony/config": "^7.4 || ^8.0",
     "symfony/dependency-injection": "^7.4 || ^8.0",
@@ -40,7 +45,6 @@
     "phpunit/phpunit": "^12.0",
     "phpunit/php-code-coverage": "^12.0",
     "symfony/phpunit-bridge": "^7.4 || ^8.0",
-    "doctrine/orm": "^3.3",
     "roave/security-advisories": "dev-latest"
   },
   "extra": {
