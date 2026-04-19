@@ -1,0 +1,56 @@
+{
+  "name": "zhortein/doctrine-lifecycle-bundle",
+  "description": "Reusable Doctrine lifecycle features for Symfony entities, including timestampable, blameable and soft-delete support.",
+  "keywords": ["symfony", "bundle", "lifecycle", "timestampable", "blameable", "soft-delete"],
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "homepage": "https://www.david-renard.fr",
+  "authors": [
+    {
+      "name": "David Renard",
+      "email": "david.renard.21@free.fr",
+      "homepage": "https://www.david-renard.fr",
+      "role": "Owner, Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Zhortein\\DoctrineLifecycleBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Zhortein\\DoctrineLifecycleBundle\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=8.4",
+    "doctrine/doctrine-bundle": "^2.12",
+    "doctrine/persistence": "^3.3 || ^4.0",
+    "symfony/config": "^7.4 || ^8.0",
+    "symfony/dependency-injection": "^7.4 || ^8.0",
+    "symfony/framework-bundle": "^7.4 || ^8.0",
+    "symfony/http-kernel": "^7.4 || ^8.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "phpstan/phpstan-doctrine": "^2.0",
+    "phpstan/phpstan-symfony": "^2.0",
+    "friendsofphp/php-cs-fixer": "^3.95",
+    "phpunit/phpunit": "^12.0",
+    "phpunit/php-code-coverage": "^12.0",
+    "symfony/phpunit-bridge": "^7.4 || ^8.0",
+    "doctrine/orm": "^3.3",
+    "roave/security-advisories": "dev-latest"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-develop": "0.1-dev"
+    }
+  },
+  "scripts": {
+    "php-cs-fixer": "php-cs-fixer fix --verbose",
+    "phpstan": "phpstan analyse -c phpstan.neon",
+    "test": "phpunit"
+  }
+}
