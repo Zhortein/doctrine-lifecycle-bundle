@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Zhortein\DoctrineLifecycleBundle\:
+    resource: '../src/'
+    exclude:
+      - '../src/DependencyInjection/'
+      - '../src/ZhorteinDoctrineLifecycleBundle.php'
+
+  Zhortein\DoctrineLifecycleBundle\Resolver\ActorResolverInterface:
+    alias: Zhortein\DoctrineLifecycleBundle\Resolver\NullActorResolver
